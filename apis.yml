@@ -1,22 +1,59 @@
 aid: crowdmob
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/crowdmob.png
 name: CrowdMob
-description: CrowdMob is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'CrowdMob was a mobile gaming and app-monetization startup surfaced as
+  an a16z portfolio company. Enrichment probing on 2026-07-20 found no operating API
+  surface: the company no longer appears in the a16z portfolio listing, and the crowdmob.com
+  domain is now operated by an unrelated affiliate-marketing publisher (AffiliateBay)
+  as a WordPress "growth marketing agency" landing page. No developer portal, documentation,
+  API reference, specs, SDKs, packages, or /.well-known/ discovery documents exist.
+  Retained as a historical/defunct record rather than an active API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/crowdmob/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-status-evidence: 'crowdmob.com resolves (Cloudflare, HTTP 200) but serves an unrelated
+  WordPress site whose og:site_name and schema.org Organization are both "AffiliateBay";
+  content published 2024-07-14. All probed paths (/.well-known/security.txt, /openid-configuration,
+  /oauth-authorization-server, /api-catalog, /llms.txt) return the identical 312,944-byte
+  homepage — soft-404s, not real documents. api.crowdmob.com and developer.crowdmob.com
+  do not resolve (NXDOMAIN). Domain registered 2009-05-08, now behind Domains By Proxy
+  (GoDaddy). CrowdMob is absent from the current a16z portfolio page.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Defunct
+- Mobile
+- Gaming
+- Advertising
+- Monetization
+- No API
 apis: []
+common: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
