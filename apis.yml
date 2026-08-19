@@ -34,7 +34,7 @@ x-status-evidence: 'crowdmob.com resolves (Cloudflare, HTTP 200) but serves an u
   homepage — soft-404s, not real documents. api.crowdmob.com and developer.crowdmob.com
   do not resolve (NXDOMAIN). Domain registered 2009-05-08, now behind Domains By Proxy
   (GoDaddy). CrowdMob is absent from the current a16z portfolio page.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
